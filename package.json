@@ -1,37 +1,12 @@
 {
   "name": "heroku-test-nodejs",
-  "version": "0.0.1",
-  "description": "test",
-  "main": "app.js",
-  "engines": {
-    "node": "10.6.0"
+  "description": "Our sample Node to Heroku app",
+  "main": "hello-world.js",
+  "scripts": {
+    "start": "node hello-world.js"
   },
   "dependencies": {
-    "nodemon": "^1.12.1",
-    "paralleljs": "^0.2.1",
-    "escape-html": "^1.0.3",
-    "socket.io": "^2.0.3"
-  },
-  "keywords": [
-    "example",
-    "heroku"
-  ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
-  },
-  "env": {},
-  "formation": {
-    "web": {
-      "quantity": 1
-    }
-  },
-  "addons": [],
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    }
-  ],
-  "author": "dealenx",
-  "license": "ISC"
+    "ejs": "2.5.6",
+    "express": "4.15.2"
+  }
 }
