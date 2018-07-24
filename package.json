@@ -1,5 +1,5 @@
 {
-  "name": "node-heroku",
+  "name": "heroku-test-nodejs",
   "version": "0.0.1",
   "description": "test",
   "main": "app.js",
@@ -20,6 +20,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
+  "env": {},
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
   "author": "dealenx",
   "license": "ISC"
 }
